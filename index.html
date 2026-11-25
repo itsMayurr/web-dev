@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of a first-year engineering student.">
+  <title>Your Name | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">YN<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">HELLO, WORLD! I'M</p>
+          <h1>Your Name</h1>
+          <h2>First-Year Engineering Student</h2>
+          <p class="hero-description">
+            I am an enthusiastic learner exploring technology, programming and
+            creative problem-solving. I enjoy turning ideas into simple, useful projects.
+          </p>
+          <a class="button" href="#contact">Contact Me</a>
+        </div>
+        <div class="profile-wrap">
+          <img src="assets/profile.svg" alt="Illustrated profile avatar">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2>About Me</h2>
+        </div>
+        <div class="about-card">
+          <p>
+            I am a first-year engineering student with an interest in computer
+            science and emerging technologies. I am building a strong foundation
+            in programming, web development and logical thinking.
+          </p>
+          <p>
+            <strong>Education:</strong> First-year B.Tech student, [Your Branch],
+            [Your College Name].
+          </p>
+          <p>
+            <strong>Interests:</strong> Web development, artificial intelligence,
+            learning new technologies, problem-solving and teamwork.
+          </p>
+          <p>
+            <strong>Career goal:</strong> To become a skilled technology
+            professional, build impactful solutions and keep learning throughout
+            my career.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'M LEARNING</p>
+          <h2>My Skills</h2>
+          <p class="section-intro">A few technical and professional skills I am developing.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card"><span class="skill-icon">⌨</span><h3>HTML5</h3><p>Structuring web pages</p></article>
+          <article class="skill-card"><span class="skill-icon">🎨</span><h3>CSS3</h3><p>Styling and responsive layouts</p></article>
+          <article class="skill-card"><span class="skill-icon">💻</span><h3>C Programming</h3><p>Programming fundamentals</p></article>
+          <article class="skill-card"><span class="skill-icon">🐍</span><h3>Python</h3><p>Beginner-level programming</p></article>
+          <article class="skill-card"><span class="skill-icon">🧩</span><h3>Problem Solving</h3><p>Logical and analytical thinking</p></article>
+          <article class="skill-card"><span class="skill-icon">🤝</span><h3>Communication</h3><p>Teamwork and collaboration</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">MY WORK</p>
+          <h2>Projects</h2>
+          <p class="section-intro">A couple of beginner projects that demonstrate what I am learning.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-art project-art-one"><span>01</span></div>
+            <div class="project-info">
+              <p class="project-type">HTML · CSS</p>
+              <h3>Personal Portfolio Website</h3>
+              <p>A responsive website that introduces me, highlights my skills and showcases my learning journey.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-art project-art-two"><span>02</span></div>
+            <div class="project-info">
+              <p class="project-type">C / PYTHON · BEGINNER</p>
+              <h3>Student Marks Calculator</h3>
+              <p>A simple program that accepts subject marks, calculates the total and percentage, and displays the result.</p>
+            </div>
+          </article>
+        </div>
+        <p class="small-note">Replace these sample project descriptions with your own work before submitting.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <div class="section-heading align-left">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Contact Me</h2>
+          </div>
+          <p class="contact-copy">Have a question, an idea or an opportunity? Send me a message.</p>
+          <div class="contact-detail"><span>✉</span><p><strong>Email</strong><br>your.email@example.com</p></div>
+          <div class="contact-detail"><span>⌖</span><p><strong>Location</strong><br>Your City, India</p></div>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Message subject" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+          <button class="button submit-button" type="submit">Send Message</button>
+          <p class="form-note">This demo form uses browser validation. A backend is needed to actually deliver messages.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Your Name. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
